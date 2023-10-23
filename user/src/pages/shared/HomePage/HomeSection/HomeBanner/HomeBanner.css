@@ -1,0 +1,30 @@
+.HomeBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(30%);
+  margin-top: -20px;
+  background-image: url(../../../../../assets/images/BackgroundBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+  min-height: 100vh;
+  text-align: center;
+  padding: 8px;
+  
+}
+.HomeBanner h3{
+  display: flex;
+  -webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 5px 7px rgb(0, 0, 0)
+}
+
+.HomeBanner p {
+  font-size: clamp(0.9375rem, -0.0781rem + 3.25vw, 1.75rem);
+  color: var(--secondary-white);
+   -webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 5px 7px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}

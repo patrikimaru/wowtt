@@ -1,0 +1,21 @@
+.Price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+  
+.price{
+  text-align: center;
+  border-radius: 8px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+  
+.price:hover{
+  opacity: 80%;
+}

@@ -1,0 +1,12 @@
+.scrollToTop {
+  right: 0;
+  position: absolute;
+  padding: 3px 12px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: var(--primary-color);
+}

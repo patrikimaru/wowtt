@@ -1,0 +1,16 @@
+input {
+  color: var(--primary-gray);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+  display: flex;
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+input:focus, input:focus-within {
+  outline:none
+}

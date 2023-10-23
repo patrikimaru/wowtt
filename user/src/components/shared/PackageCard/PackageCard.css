@@ -1,0 +1,48 @@
+.PackageCard {
+  width: 100%;
+  max-width: 250px;
+  height: fit-content;
+}
+
+.PackageCardTitle{
+  font-size: clamp(0.9375rem, 0.3906rem + 1.75vw, 1.375rem);
+}
+
+.PackageCardDescription {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 4px;
+  font-size: clamp(0.5rem, 0.0313rem + 1.5vw, 0.875rem);
+  color: var(--secondary-gray);
+}
+
+.PackageCardImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.PackageCardRating{
+  display: flex;
+  align-items: center;
+  gap:3px;
+  color: #EF9E00;
+}
+
+.PackageCardPrice {
+  font-weight: 700;
+  color: var(--secondary-gray);
+}
+
+@media screen and (max-width: 600px) {
+  .PackageCard {
+    max-width: 40vw;
+  }
+
+  .PackageCardImage {
+    height: 100px;
+  }
+}
+

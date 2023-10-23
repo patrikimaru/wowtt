@@ -1,0 +1,54 @@
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.ContactFormLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Contactdata{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.ContactFormInput {
+  background-color: var(--primary-white);
+  border-radius: 12px;
+  padding: 0 12px;
+}
+
+.ContactFormInput input {
+  width: 100%;
+  padding: 12px 0px;
+}
+
+.ContactFormInput textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  border: none;
+  color: var(--primary-gray);
+  font-family: sans-serif;
+  padding: 15px 0px;
+}
+
+.ContactFormInput textarea:focus-within{
+  outline: none;
+}
+
+.ContactFormInputName {
+  display: flex;
+  gap: 25px;
+}
+
+.ContactFormInputName .ContactFormInput {
+  width: 92%;
+}
+
+.contactbtn{
+  width: 20%;
+}
+

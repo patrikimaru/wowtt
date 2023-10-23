@@ -1,0 +1,212 @@
+
+.TopDestinationsCard  h2 {
+  font-size: 2.25rem;
+  color: var(--primary-white);
+  line-height: 1.1;
+}
+
+.TopDestinationsCard  p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--primary-white);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.TopDestinationsCard  {
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 250px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.TopDestinationsCard  > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.TopDestinationsCardBackground {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  filter: grayscale(45%);
+}
+
+.TopDestinationsCardContent {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.TopDestinationsCardContentContainer {
+  --flow-space: 1.25rem;
+}
+
+.TopDestinationsCardTitle {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; 
+}
+
+.TopDestinationsCardTitle::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--primary-white);
+}
+
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .TopDestinationsCardContent {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .TopDestinationsCardTitle::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .TopDestinationsCardBackground {
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCardButton {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .TopDestinationsCard:hover,
+  .TopDestinationsCard:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardContent,
+  .TopDestinationsCard:focus-within .TopDestinationsCardContent {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCard:focus-within .TopDestinationsCardContent {
+    transition-duration: 0ms;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardBackground,
+  .TopDestinationsCard:focus-within .TopDestinationsCardBackground {
+    transform: scale(1.3);
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCard:hover .TopDestinationsCardButton,
+  .TopDestinationsCard:focus-within .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCard:focus-within .TopDestinationsCardButton {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardTitle::after,
+  .TopDestinationsCard:focus-within .TopDestinationsCardTitle::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .TopDestinationsCardContent {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .TopDestinationsCardTitle::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .TopDestinationsCardBackground {
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCardButton {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .TopDestinationsCard:hover,
+  .TopDestinationsCard:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardContent,
+  .TopDestinationsCard:focus-within .TopDestinationsCardContent {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .TopDestinationsCard:focus-within .TopDestinationsCardContent {
+    transition-duration: 0ms;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardBackground,
+  .TopDestinationsCard:focus-within .TopDestinationsCardBackground {
+    transform: scale(1.3);
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCard:hover .TopDestinationsCardButton,
+  .TopDestinationsCard:focus-within .TopDestinationsCardContentContainer > :not(.TopDestinationsCardTitle),
+  .TopDestinationsCard:focus-within .TopDestinationsCardButton {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .TopDestinationsCard:hover .TopDestinationsCardTitle::after,
+  .TopDestinationsCard:focus-within .TopDestinationsCardTitle::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .TopDestinationsCard{
+    max-width: 400px;
+  }
+}

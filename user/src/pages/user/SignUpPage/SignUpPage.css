@@ -1,0 +1,35 @@
+.SignUpPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+  background-image: linear-gradient(to top, rgba(33, 36, 71, 0.6) 0 100%),url(../../../assets/images/BackgroundBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.SignUpContainerForm {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+  width: 100%;
+  height: fit-content;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+@media screen and (max-width: 700px) { 
+  .SignUpPage {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .SignUpContainer {
+    display: none;
+  }
+
+  .SignUpContainerForm  {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,42 @@
+.UserForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 5px;
+  
+}
+
+.UserInput {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  background-color: var(--secondary-white);
+  padding: 0 12px;
+  border-radius: 20px;
+  color: black;
+}
+
+.UserInputNameForm {
+  display: flex;
+  gap: 10px;
+}
+
+.UserInputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  color: var(--primary-dark);
+}
+.UserInputNameForm .UserInputDiv {
+  width: 50%;
+}
+
+.user-form-btn {
+  margin-top: 10px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: var(--primary-danger);
+}

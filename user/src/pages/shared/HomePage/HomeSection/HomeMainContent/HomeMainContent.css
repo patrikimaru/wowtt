@@ -1,0 +1,27 @@
+.HomeMainContentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeMainContentSectionTitle {
+  text-align: center;
+  text-wrap: balance;
+}
+
+.HomeMainContentSection main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.HomeMainContentSection .ButtonContainer {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+

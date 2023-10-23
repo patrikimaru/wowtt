@@ -1,0 +1,7 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-bottom: 120px;
+
+}

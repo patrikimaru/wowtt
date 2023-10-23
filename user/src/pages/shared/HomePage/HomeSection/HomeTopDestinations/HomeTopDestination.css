@@ -1,0 +1,36 @@
+.TopDestinationSection {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopDestinationContainer {
+  width: 90vw;
+}
+.TopDestinationSection main{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .TopDestinationSection main {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .TopDestinationSection main {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    gap: 20px;
+  }
+}
